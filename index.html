@@ -4,92 +4,110 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LITE SHOP — Магазин AliExpress в Украине</title>
+  <title>LITE SHOP — Магазин</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" type="image/png">
+  <link rel="icon" href="https://i.ibb.co/jfPndYf/logo-tg.jpg" type="image/png">
   <style>
-    * { box-sizing: border-box; }
-    body { margin: 0; font-family: 'Roboto', sans-serif; background: #f2f2f2; color: #333; }
-    header, footer { background-color: #111; color: #fff; padding: 20px 0; text-align: center; }
-    nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
-    .container { max-width: 1100px; margin: 0 auto; padding: 20px; background: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1); border-radius: 8px; }
-    h1, h2, h3 { color: #222; }
-    .section { margin-bottom: 50px; }
-    .btn { display: inline-block; padding: 12px 25px; background: #007bff; color: #fff; border-radius: 5px; text-decoration: none; transition: 0.3s; }
-    .btn:hover { background: #0056b3; }
-    .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-    .product { background: #fafafa; border: 1px solid #ddd; padding: 15px; border-radius: 8px; text-align: center; }
-    .product img { width: 100%; height: 200px; object-fit: cover; border-radius: 5px; }
-    .product-title { font-weight: bold; margin: 10px 0; }
-    .product-price { color: #007bff; font-size: 18px; margin-bottom: 10px; }
-    .contact-form input, .contact-form textarea { width: 100%; padding: 10px; margin-top: 10px; border-radius: 5px; border: 1px solid #ccc; }
-    .contact-form button { margin-top: 10px; padding: 10px 20px; background: #28a745; color: #fff; border: none; border-radius: 5px; }
+    body { font-family: 'Roboto', sans-serif; margin: 0; background: #f2f2f2; color: #333; }
+    header, footer { background: #111; color: white; padding: 20px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; }
+    .container { max-width: 1200px; margin: auto; padding: 20px; background: white; border-radius: 10px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+    .card { background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); overflow: hidden; transition: 0.3s; }
+    .card:hover { transform: translateY(-5px); }
+    .card img { width: 100%; height: 250px; object-fit: cover; }
+    .card-body { padding: 15px; }
+    .card-title { font-weight: bold; font-size: 18px; margin-bottom: 5px; }
+    .card-price { color: #d20000; font-weight: bold; margin-bottom: 10px; }
+    .card-desc { font-size: 14px; color: #555; margin-bottom: 10px; }
+    .card-btn { background: #007bff; color: white; padding: 10px 15px; border-radius: 5px; text-decoration: none; display: inline-block; }
   </style>
 </head>
 <body>
+  <header>
+    <h1>LITE SHOP</h1>
+    <nav>
+      <a href="#">Главная</a>
+      <a href="#catalog">Каталог</a>
+      <a href="#about">О нас</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+  </header>
 
-<header>
-  <h1>LITE SHOP</h1>
-  <nav>
-    <a href="#home">Главная</a>
-    <a href="#catalog">Каталог</a>
-    <a href="#about">О нас</a>
-    <a href="#contacts">Контакты</a>
-  </nav>
-</header>
+  <div class="container" id="catalog">
+    <h2>🔥 Товары в наличии</h2>
+    <div class="grid">
 
-<div class="container">
-  <section id="home" class="section">
-    <h2>Посредник AliExpress в Украине</h2>
-    <p>Покупайте с AliExpress через LITE SHOP — быстро, выгодно, с доставкой по Украине за 10–14 дней!</p>
-    <a href="https://t.me/liteshopukraine" class="btn">Сделать заказ в Telegram</a>
-  </section>
-
-  <section id="catalog" class="section">
-    <h2>Каталог товаров</h2>
-    <div class="product-grid">
-      <div class="product">
-        <img src="https://img.alicdn.com/imgextra/i1/2212533592173/O1CN01YxM2Z41wK94RScLz7_!!0-item_pic.jpg" alt="Куртка">
-        <div class="product-title">Мужская зимняя куртка</div>
-        <div class="product-price">850 грн</div>
-        <a class="btn" href="https://t.me/liteshopukraine">Заказать</a>
-      </div>
-      <div class="product">
-        <img src="https://img.alicdn.com/imgextra/i4/2211297024717/O1CN01pDqgnt1vVyEfS49C0_!!0-item_pic.jpg" alt="Наушники">
-        <div class="product-title">Беспроводные наушники</div>
-        <div class="product-price">620 грн</div>
-        <a class="btn" href="https://t.me/liteshopukraine">Заказать</a>
-      </div>
-      <div class="product">
-        <img src="https://img.alicdn.com/imgextra/i2/2211889699615/O1CN01mLbUNP1m6co1Hh6ie_!!0-item_pic.jpg" alt="Органайзер">
-        <div class="product-title">Органайзер для кухни</div>
-        <div class="product-price">290 грн</div>
-        <a class="btn" href="https://t.me/liteshopukraine">Заказать</a>
-      </div>
+```
+  <div class="card">
+    <img src="https://i.ibb.co/XDp5mbK/photo-16-2025-05-09-11-54-47.jpg" alt="Пижама черная">
+    <div class="card-body">
+      <div class="card-title">Женский пижамный комплект</div>
+      <div class="card-price">255 грн</div>
+      <div class="card-desc">Два цвета. Размерная сетка указана на фото.</div>
+      <a href="https://t.me/manager_liteshop" class="card-btn">Заказать</a>
     </div>
-  </section>
+  </div>
 
-  <section id="about" class="section">
-    <h2>О нас</h2>
-    <p>LITE SHOP — это команда, которая помогает украинцам заказывать с AliExpress уже более 3 лет. Мы находим лучшие товары, проверяем продавцов, контролируем доставку и сопровождаем клиента от заказа до получения.</p>
-  </section>
+  <div class="card">
+    <img src="https://i.ibb.co/98X5yx8/photo-18-2025-05-09-11-54-47.jpg" alt="Сумка женская">
+    <div class="card-body">
+      <div class="card-title">Женская сумка через плечо</div>
+      <div class="card-price">250 грн / 230 грн</div>
+      <div class="card-desc">3 цвета. Универсальный стиль. Размеры на фото.</div>
+      <a href="https://t.me/manager_liteshop" class="card-btn">Заказать</a>
+    </div>
+  </div>
 
-  <section id="contacts" class="section">
-    <h2>Связаться с нами</h2>
-    <p><strong>Telegram:</strong> <a href="https://t.me/liteshopukraine">@liteshopukraine</a></p>
-    <p><strong>Email:</strong> liteshopukr@gmail.com</p>
-    <form action="https://formspree.io/f/mnqegavd" method="POST" class="contact-form">
-      <input type="text" name="name" placeholder="Ваше имя" required>
-      <input type="email" name="email" placeholder="Ваш email" required>
-      <textarea name="message" rows="4" placeholder="Ваше сообщение" required></textarea>
-      <button type="submit">Отправить</button>
-    </form>
-  </section>
+  <div class="card">
+    <img src="https://i.ibb.co/fqhhYPN/photo-19-2025-05-09-11-54-47.jpg" alt="Мультислайсер">
+    <div class="card-body">
+      <div class="card-title">Кухонный мультислайсер</div>
+      <div class="card-price">280 грн</div>
+      <div class="card-desc">Многофункциональный: 14 в 1 и 16 в 1. Для нарезки и шинковки.</div>
+      <a href="https://t.me/manager_liteshop" class="card-btn">Заказать</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://i.ibb.co/WDVgpPr/photo-15-2025-05-09-11-54-47.jpg" alt="Кулон Hello Kitty">
+    <div class="card-body">
+      <div class="card-title">Кулон Hello Kitty</div>
+      <div class="card-price">170 грн</div>
+      <div class="card-desc">Подарочная упаковка включена. Идеальный подарок!</div>
+      <a href="https://t.me/manager_liteshop" class="card-btn">Заказать</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://i.ibb.co/N3JzT6m/photo-20-2025-05-09-11-54-47.jpg" alt="Мишка из роз">
+    <div class="card-body">
+      <div class="card-title">Мишка из искусственных роз</div>
+      <div class="card-price">390 грн</div>
+      <div class="card-desc">25 см. Отличный подарок на любое событие. Подарочная коробка в комплекте.</div>
+      <a href="https://t.me/manager_liteshop" class="card-btn">Заказать</a>
+    </div>
+  </div>
+
 </div>
+```
 
-<footer>
-  <p>&copy; 2025 LITE SHOP. Все права защищены.</p>
-</footer>
+  </div>
 
+  <div class="container" id="about">
+    <h2>О нас</h2>
+    <p>LITE SHOP — магазин с проверенными товарами из Китая. Заказывай легко через Telegram, получай быстро по Украине. Мы — посредник AliExpress с 3-летним опытом.</p>
+  </div>
+
+  <div class="container" id="contact">
+    <h2>Контакты</h2>
+    <p><strong>Telegram:</strong> <a href="https://t.me/manager_liteshop">@manager_liteshop</a></p>
+    <p><strong>Email:</strong> liteshopukr@gmail.com</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 LITE SHOP — Все права защищены.</p>
+  </footer>
 </body>
 </html>
+
