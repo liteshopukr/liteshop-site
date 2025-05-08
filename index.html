@@ -13,7 +13,7 @@
     nav a { color: white; margin: 0 15px; text-decoration: none; }
     .container { max-width: 1200px; margin: auto; padding: 20px; background: white; border-radius: 10px; }
     .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
-    .card { background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); overflow: hidden; transition: 0.3s; }
+    .card { background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); overflow: hidden; transition: 0.3s; text-align: center; }
     .card:hover { transform: translateY(-5px); }
     .card img { width: 100%; height: 250px; object-fit: cover; }
     .card-body { padding: 15px; }
@@ -21,13 +21,15 @@
     .card-price { color: #d20000; font-weight: bold; margin-bottom: 10px; }
     .card-desc { font-size: 14px; color: #555; margin-bottom: 10px; }
     .card-btn { background: #007bff; color: white; padding: 10px 15px; border-radius: 5px; text-decoration: none; display: inline-block; }
+    .product-gallery img { max-width: 100%; margin-bottom: 10px; border-radius: 10px; }
+    .back-link { display: inline-block; margin-top: 20px; text-decoration: none; color: #007bff; }
   </style>
 </head>
 <body>
   <header>
     <h1>LITE SHOP</h1>
     <nav>
-      <a href="#">Главная</a>
+      <a href="index.html">Главная</a>
       <a href="#catalog">Каталог</a>
       <a href="#about">О нас</a>
       <a href="#contact">Контакты</a>
@@ -40,52 +42,42 @@
 
 ```
   <div class="card">
-    <img src="https://i.ibb.co/XDp5mbK/photo-16-2025-05-09-11-54-47.jpg" alt="Пижама черная">
+    <a href="product-pajama.html"><img src="https://i.ibb.co/XDp5mbK/photo-16-2025-05-09-11-54-47.jpg" alt="Пижама черная"></a>
     <div class="card-body">
       <div class="card-title">Женский пижамный комплект</div>
       <div class="card-price">255 грн</div>
       <div class="card-desc">Два цвета. Размерная сетка указана на фото.</div>
-      <a href="https://t.me/manager_liteshop" class="card-btn">Заказать</a>
+      <a href="product-pajama.html" class="card-btn">Подробнее</a>
     </div>
   </div>
 
   <div class="card">
-    <img src="https://i.ibb.co/98X5yx8/photo-18-2025-05-09-11-54-47.jpg" alt="Сумка женская">
+    <a href="product-bag.html"><img src="https://i.ibb.co/98X5yx8/photo-18-2025-05-09-11-54-47.jpg" alt="Сумка женская"></a>
     <div class="card-body">
       <div class="card-title">Женская сумка через плечо</div>
       <div class="card-price">250 грн / 230 грн</div>
       <div class="card-desc">3 цвета. Универсальный стиль. Размеры на фото.</div>
-      <a href="https://t.me/manager_liteshop" class="card-btn">Заказать</a>
+      <a href="product-bag.html" class="card-btn">Подробнее</a>
     </div>
   </div>
 
   <div class="card">
-    <img src="https://i.ibb.co/fqhhYPN/photo-19-2025-05-09-11-54-47.jpg" alt="Мультислайсер">
+    <a href="product-slicer.html"><img src="https://i.ibb.co/fqhhYPN/photo-19-2025-05-09-11-54-47.jpg" alt="Мультислайсер"></a>
     <div class="card-body">
       <div class="card-title">Кухонный мультислайсер</div>
       <div class="card-price">280 грн</div>
       <div class="card-desc">Многофункциональный: 14 в 1 и 16 в 1. Для нарезки и шинковки.</div>
-      <a href="https://t.me/manager_liteshop" class="card-btn">Заказать</a>
+      <a href="product-slicer.html" class="card-btn">Подробнее</a>
     </div>
   </div>
 
   <div class="card">
-    <img src="https://i.ibb.co/WDVgpPr/photo-15-2025-05-09-11-54-47.jpg" alt="Кулон Hello Kitty">
+    <a href="product-kitty.html"><img src="https://i.ibb.co/WDVgpPr/photo-15-2025-05-09-11-54-47.jpg" alt="Кулон Hello Kitty"></a>
     <div class="card-body">
       <div class="card-title">Кулон Hello Kitty</div>
       <div class="card-price">170 грн</div>
       <div class="card-desc">Подарочная упаковка включена. Идеальный подарок!</div>
-      <a href="https://t.me/manager_liteshop" class="card-btn">Заказать</a>
-    </div>
-  </div>
-
-  <div class="card">
-    <img src="https://i.ibb.co/N3JzT6m/photo-20-2025-05-09-11-54-47.jpg" alt="Мишка из роз">
-    <div class="card-body">
-      <div class="card-title">Мишка из искусственных роз</div>
-      <div class="card-price">390 грн</div>
-      <div class="card-desc">25 см. Отличный подарок на любое событие. Подарочная коробка в комплекте.</div>
-      <a href="https://t.me/manager_liteshop" class="card-btn">Заказать</a>
+      <a href="product-kitty.html" class="card-btn">Подробнее</a>
     </div>
   </div>
 
@@ -110,4 +102,3 @@
   </footer>
 </body>
 </html>
-
